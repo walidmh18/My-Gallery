@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+*{
+    margin: 0;padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+body{
+    padding: 1rem;
+    margin: 5rem 0;
+}
+
+.upper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.upper img{
+    width: 200px;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+.profileName{
+    margin-bottom: 1rem;
+}
+.insights{
+    display: flex;
+}
+.insights div{
+    background: #ddd;
+    width: 6rem;
+    /* height: 5rem; */
+    padding: 2rem 0;
+    text-align: center;
+
+    border-radius: 15px;
+    margin: 1rem;
+}
+.insights span{
+    display: block;
+    color: #444;
+}
+.gridContainer img {
+    border-radius: 1rem;
+    width: 100%;
+
+}
+.gridContainer{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 1rem 13vw;
+}
+.photo2 {
+    grid-column: span 2;
+    
+}
+.photo3 {
+    grid-column: span 2;
+    
+}
+.photo4{
+    grid-row: span 2;
+
+}
+.photo4 img{
+    
+    height: unset;
+}
+@media screen and (max-width:800px) {
+    .gridContainer{
+        margin: 1rem 10vw;
+    }
+    .gridContainer img{
+        border-radius: 2vw;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .gridContainer{
+        margin: 1rem 0vw;
+    }
+    
+}
